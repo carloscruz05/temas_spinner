@@ -6,33 +6,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Light Theme -->
+
     <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/lightBackground</item>
         <item name="android:textColor">@color/lightText</item>
-        <item name="android:fontFamily">@font/sans_serif</item>
+        <item name="android:fontFamily">@font/whiteamour</item>
     </style>
 
-    <!-- Dark Theme -->
+
     <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/darkBackground</item>
         <item name="colorPrimaryDark">@color/darkBackground</item>
         <item name="colorAccent">@android:color/holo_blue_light</item>
         <item name="android:windowBackground">@color/darkBackground</item>
         <item name="android:textColor">@color/darkText</item>
-        <item name="android:fontFamily">@font/serif</item>
+        <item name="android:fontFamily">@font/sanseriffic</item>
     </style>
 
-    <!-- Custom Theme -->
+
     <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/customBackground</item>
         <item name="colorPrimaryDark">@color/customBackground</item>
         <item name="colorAccent">@color/customText</item>
         <item name="android:windowBackground">@color/customBackground</item>
         <item name="android:textColor">@color/customText</item>
-        <item name="android:fontFamily">@font/monospace</item>
+        <item name="android:fontFamily">@font/soft_sans_serif_7</item>
     </style>
 </resources>

@@ -22,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner spinner = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.themes_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+                R.array.themes_array, R.layout.spinner_item);  // Usar diseño personalizado
+
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -46,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (getSavedTheme() != selectedTheme) {
                     saveTheme(selectedTheme);
-                    recreate(); // Restart the activity to apply the new theme
+                    recreate(); // Reinicia la actividad para aplicar el nuevo tema
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                // Do nothing
+                // No hacer nada
             }
         });
     }
@@ -65,6 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
     private int getSavedTheme() {
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        return prefs.getInt(PREF_THEME, R.style.AppTheme); // Default theme
+        return prefs.getInt(PREF_THEME, R.style.AppTheme); // Tema por defecto
     }
 }
