@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Themes Spinner App</string>
+    <string-array name="themes_array">
+        <item>Light Theme</item>
+        <item>Dark Theme</item>
+        <item>Custom Theme</item>
+    </string-array>
+</resources>
